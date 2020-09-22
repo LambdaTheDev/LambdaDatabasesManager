@@ -20,12 +20,14 @@ function showDatabasesHTML()
     $result .= '<tr>';
     $result .= '<th>Database name</th>';
     $result .= '<th>View DB</th>';
+    $result .= '</tr>';
 
     while ($database = $query->fetch(PDO::FETCH_OBJ))
     {
+        $name = $database->Database;
         $result .= '<tr>';
         $result .= '<td>' . $database->Database . '</td>';
-        $result .= '<td><a class="w3-container w3-button w3-blue" href="database.php?name=" ' . $database->Database . '>View</a></td>';
+        $result .= '<td><a class="w3-container w3-button w3-blue" href="database.php?name=' . $name . '">View</a></td>';
         $result .= '</tr>';
     }
     $result .= '</table></div>';
@@ -45,7 +47,8 @@ function showDatabasesHTML()
     <div class="w3-bar w3-blue">
         <div class="w3-bar-item">&lambda; Databases Manager</div>
         <div class="w3-bar-item"><?php echo $_SESSION['dbData']['user']; ?></div>
-        <a class="w3-bar-item w3-button" href="#">All databases</a>
+        <a class="w3-bar-item w3-button" href="index.php">All databases</a>
+
         <a class="w3-bar-item w3-button w3-red" style="text-align: right;" href="login.php?logout=true">Logout</a>
     </div>
 </nav>

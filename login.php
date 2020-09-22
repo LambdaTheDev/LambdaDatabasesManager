@@ -6,6 +6,7 @@ require_once 'modules/Security.php';
 if($_GET['logout'] == true)
 {
     session_destroy();
+    header('Location: login.php');
     exit();
 }
 

@@ -70,7 +70,9 @@
       <workItem from="1600768946623" duration="6000" />
       <workItem from="1600776442430" duration="1471000" />
       <workItem from="1600778180212" duration="4682000" />
-      <workItem from="1600790531115" duration="5152000" />
+      <workItem from="1600790531115" duration="8963000" />
+      <workItem from="1600803014141" duration="686000" />
+      <workItem from="1600803734182" duration="2813000" />
     </task>
     <servers />
   </component>
@@ -90,23 +92,27 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1600779096008">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1600801470921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600779096008" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600801470921" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600781029663">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600781029663" />
-    <state x="419" y="139" key="NewPhpClassDialog" timestamp="1600780199445">
+    <state x="419" y="139" key="NewPhpClassDialog" timestamp="1600801454186">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="419" y="139" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1600780199445" />
+    <state x="419" y="139" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1600801454186" />
     <state x="393" y="159" key="NewPhpClassDialog/0.23.1440.806@0.23.1440.806" timestamp="1598116981755" />
     <state x="575" y="340" key="NewPhpFileDialog" timestamp="1600798219475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="575" y="340" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600798219475" />
     <state x="539" y="356" key="NewPhpFileDialog/0.23.1440.806@0.23.1440.806" timestamp="1598115883066" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600803429409">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600803429409" />
   </component>
 </project>
