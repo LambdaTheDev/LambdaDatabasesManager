@@ -36,4 +36,19 @@ class Security
         }
         return $result;
     }
+
+    public static function createSession($host, $port, $user, $pass)
+    {
+        $_SESSION['dbData']['host'] = $host;
+        $_SESSION['dbData']['port'] = $port;
+        $_SESSION['dbData']['user'] = $user;
+        $_SESSION['dbData']['pass'] = $pass;
+        $_SESSION['dbData']['loggedIn'] = true;
+    }
+
+    public static function isLoggedIn()
+    {
+        if(!empty($_SESSION['dbData']) && $_SESSION['dbData']['loggedIn']) return true;
+        return false;
+    }
 }

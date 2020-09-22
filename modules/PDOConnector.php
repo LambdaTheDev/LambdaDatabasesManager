@@ -9,7 +9,7 @@ class PDOConnector
         $host = $_SESSION['dbData']['host'];
         $port = $_SESSION['dbData']['port'];
         $user = $_SESSION['dbData']['user'];
-        $pass = Security::AESDecrypt($_SESSION['dbData']['pass'], $_SESSION['dbData']['key']);
+        $pass = $_SESSION['dbData']['pass'];
 
         $pdo = null;
 
