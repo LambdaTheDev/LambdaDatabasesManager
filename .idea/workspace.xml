@@ -55,6 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -65,6 +66,10 @@
       <option name="presentableId" value="Default" />
       <updated>1598114560307</updated>
       <workItem from="1598114561402" duration="3747000" />
+      <workItem from="1600715487753" duration="69000" />
+      <workItem from="1600768946623" duration="6000" />
+      <workItem from="1600776442430" duration="1471000" />
+      <workItem from="1600778180212" duration="4682000" />
     </task>
     <servers />
   </component>
@@ -81,15 +86,26 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="159" key="NewPhpClassDialog" timestamp="1598116981755">
-      <screen x="0" y="23" width="1440" height="806" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1600779096008">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600779096008" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600781029663">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600781029663" />
+    <state x="419" y="139" key="NewPhpClassDialog" timestamp="1600780199445">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="419" y="139" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1600780199445" />
     <state x="393" y="159" key="NewPhpClassDialog/0.23.1440.806@0.23.1440.806" timestamp="1598116981755" />
-    <state x="539" y="356" key="NewPhpFileDialog" timestamp="1598115883066">
-      <screen x="0" y="23" width="1440" height="806" />
+    <state x="575" y="340" key="NewPhpFileDialog" timestamp="1600776499576">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="575" y="340" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600776499576" />
     <state x="539" y="356" key="NewPhpFileDialog/0.23.1440.806@0.23.1440.806" timestamp="1598115883066" />
   </component>
 </project>

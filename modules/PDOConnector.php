@@ -1,36 +1,28 @@
 <?php
-require 'Config.php';
+session_start();
+require_once 'Security.php';
 
 class PDOConnector
 {
-    public static function getAdminConnection($databaseName)
+    public static function connect($database = null)
     {
-        $pdo = null;
-        try
-        {
-            $pdo = new PDO('mysql:host=' . Config::HOST . ';dbname=' . $databaseName, Config::ADMIN_USERNAME, Config::ADMIN_PASSWORD);
-        }
-        catch (PDOException $ex)
-        {
-            die('LambdaDatabasesManager wrongly configured! Please fix your Config.php file in modules folder! Exception message: ' . $ex->getMessage());
-        }
-        return $pdo;
-    }
+        $host = $_SESSION['dbData']['host'];
+        $port = $_SESSION['dbData']['port'];
+        $user = $_SESSION['dbData']['user'];
+        $pass = Security::AESDecrypt($_SESSION['dbData']['pass'], $_SESSION['dbData']['key']);
 
-    public static function connect($host, $databaseName, $username, $password)
-    {
         $pdo = null;
 
         try
         {
-            $pdo = new PDO('mysql:host=' . $host . ';dbname=' . $databaseName, $username, $password);
+            $conString = "mysql:host=$host;port=$port";
+            if($database != null) $conString .= ";dbname=$database";
+
+            $pdo = new PDO($conString, $user, $pass);
         }
         catch (PDOException $ex)
         {
-            return array(
-                'code' => $ex->getCode(),
-                'message' => $ex->getMessage()
-            );
+            Alert::setAlert('red', $ex->getMessage());
         }
 
         return $pdo;
