@@ -14,7 +14,14 @@ function showTableHTML()
 {
     $pdo = PDOConnector::connect($_GET['database']);
 
-    $query = $pdo->query("DESCRIBE " . $_GET['name']);
+    $query = $pdo->prepare("DESCRIBE :name");
+    $query->bindParam(":name", $_GET['name']);
+    $query->execute();
+
+    if(!$query)
+    {
+        Alert::setAlert("red", 'Table ' . $_GET['name'] . ' does not  exist!');
+    }
 
     $result = '<div><table class="w3-table w3-bordered w3-striped">';
     $result .= '<tr>';
@@ -45,7 +52,7 @@ function showTableHTML()
         $result .= '<td>'.$default.'</td>';
         $result .= '<td>'.$additional.'</td>';
 
-        $newUrl = 'column.php?database=' . $_GET['database'] . '&table=' . $_GET['name'] . '&column=' . $column->Field;
+        $newUrl = 'table.php?database=' . $_GET['database'] . '&table=' . $_GET['name'] . '&column=' . $column->Field;
         $result .= '<td><a class="w3-container w3-button w3-blue" href="' . $newUrl . '">View</a></td>';
         $result .= '</td>';
     }

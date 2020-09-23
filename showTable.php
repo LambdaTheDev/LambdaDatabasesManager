@@ -13,10 +13,23 @@ if(!Security::isLoggedIn())
 function showTableHTML()
 {
     $pdo = PDOConnector::connect($_GET['database']);
+    if($pdo == null)
+    {
+        Alert::setAlert('red', 'Database with name ' . $_GET['database'] . ' does not exist!', 'index.php');
+        exit();
+    }
 
-    $query = $pdo->query("DESCRIBE " . $_GET['table']);
+    $query = $pdo->prepare("DESCRIBE :table");
+    $query->bindParam(":table", $_GET['table']);
+    $query->execute();
 
-    $result = '<div style="overflow-y: scroll"><table class="w3-table w3-bordered w3-striped">';
+    if(!$query)
+    {
+        Alert::setAlert('red', 'Table with name ' . $_GET['table'] . ' does not exist!', 'index.php');
+        exit();
+    }
+
+    $result = '<div style="overflow-y: scroll;"><table class="w3-table w3-bordered w3-striped">';
     $result .= '<tr>';
 
     $fields = array();
@@ -47,7 +60,7 @@ function showTableHTML()
 
 <html>
 <head>
-    <title>&lambda; Databases Manager - <?php echo $_GET['name']; ?> column</title>
+    <title>&lambda; Databases Manager - <?php echo $_GET['table']; ?> column</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -67,7 +80,7 @@ function showTableHTML()
     <div class="w3-col s1 m1 l1">&nbsp;</div>
     <div class="w3-col s10 m10 s10">
         <?php echo Alert::displayAsText(); ?>
-        <h1><?php echo $_GET['name']; ?> tables:</h1>
+        <h1><?php echo $_GET['table']; ?> tables:</h1>
         <?php echo showTableHTML(); ?>
     </div>
     <div class="w3-col s1 m1 l1">&nbsp;</div>

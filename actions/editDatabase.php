@@ -10,26 +10,28 @@ if(!Security::isLoggedIn())
     exit();
 }
 
-function showDatabasesHTML()
+function showTablesHTML()
 {
-    $pdo = PDOConnector::connect();
+    $pdo = PDOConnector::connect($_GET['database']);
 
-    $query = $pdo->query("SHOW DATABASES");
+    $query = $pdo->query("SHOW TABLES");
 
     $result = '<div><table class="w3-table w3-bordered w3-striped">';
     $result .= '<tr>';
-    $result .= '<th>Database name</th>';
-    $result .= '<th>View DB</th>';
+    $result .= '<th>Table name</th>';
+    $result .= '<th>View</th>';
     $result .= '</tr>';
 
-    while ($database = $query->fetch(PDO::FETCH_OBJ))
+    while ($table = $query->fetch(PDO::FETCH_ASSOC))
     {
-        $name = $database->Database;
+        $tableName = $table['Tables_in_' . $_GET['database']];
+
         $result .= '<tr>';
-        $result .= '<td>' . $database->Database . '</td>';
-        $result .= '<td><a class="w3-container w3-button w3-blue" href="showDatabase.php?database=' . $name . '">View</a></td>';
-        $result .= '</tr>';
+        $result .= '<td>'.$tableName.'</td>';
+        $result .= '<td><a class="w3-container w3-button w3-blue" href="showTable.php?database=' . $_GET['database'] . '&table=' . $tableName . '">View</a></td>';
+        $result .= '</td>';
     }
+
     $result .= '</table></div>';
     return $result;
 }
@@ -37,7 +39,7 @@ function showDatabasesHTML()
 
 <html>
 <head>
-    <title>&lambda; Databases Manager - Available databases</title>
+    <title>&lambda; Databases Manager - <?php echo $_GET['database']; ?> database</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -57,10 +59,11 @@ function showDatabasesHTML()
     <div class="w3-col s1 m1 l1">&nbsp;</div>
     <div class="w3-col s10 m10 s10">
         <?php echo Alert::displayAsText(); ?>
-        <h1>All available databases:</h1>
-        <?php echo showDatabasesHTML(); ?>
+        <h1><?php echo $_GET['database']; ?> tables:</h1>
+        <?php echo showTablesHTML(); ?>
     </div>
     <div class="w3-col s1 m1 l1">&nbsp;</div>
 </div>
 </body>
 </html>
+
