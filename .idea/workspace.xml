@@ -62,6 +62,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -87,7 +88,10 @@
       <workItem from="1600803014141" duration="686000" />
       <workItem from="1600803734182" duration="3871000" />
       <workItem from="1600841674244" duration="5552000" />
-      <workItem from="1600861980329" duration="1502000" />
+      <workItem from="1600861980329" duration="15578000" />
+      <workItem from="1600891539171" duration="4711000" />
+      <workItem from="1600934772784" duration="1384000" />
+      <workItem from="1600954677369" duration="8560000" />
     </task>
     <servers />
   </component>
@@ -107,35 +111,35 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1600801470921">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1600955397658">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600801470921" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600955397658" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600781029663">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600781029663" />
-    <state x="419" y="139" key="NewPhpClassDialog" timestamp="1600801454186">
+    <state x="419" y="139" key="NewPhpClassDialog" timestamp="1600955369666">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="419" y="139" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1600801454186" />
+    <state x="419" y="139" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1600955369666" />
     <state x="393" y="159" key="NewPhpClassDialog/0.23.1440.806@0.23.1440.806" timestamp="1598116981755" />
-    <state x="575" y="340" key="NewPhpFileDialog" timestamp="1600858106862">
+    <state x="575" y="340" key="NewPhpFileDialog" timestamp="1600970242171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="575" y="340" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600858106862" />
+    <state x="575" y="340" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600970242171" />
     <state x="539" y="356" key="NewPhpFileDialog/0.23.1440.806@0.23.1440.806" timestamp="1598115883066" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1600856398418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600856398418" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1600857893921">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1600893516449">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1600857893921" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600803429409">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1600893516449" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600934868751">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600803429409" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600934868751" />
   </component>
 </project>
