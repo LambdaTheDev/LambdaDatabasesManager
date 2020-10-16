@@ -8,7 +8,7 @@ function showTablesHTML()
 
     $query = $pdo->query("SHOW TABLES");
 
-    $result = '<div style="overflow-y: scroll;"><form action="actions/editDatabase.php" method="post"><table class="w3-table w3-bordered w3-striped">';
+    $result = '<div style="overflow-y: scroll;"><form action="actions/editDatabase.php" method="post"><table class="w3-table w3-bordered w3-striped">'; //todo
     $result .= '<tr>';
     $result .= '<th><input type="checkbox" id="checkAll" class="w3-check"></th>';
     $result .= '<th>Table name</th>';
@@ -20,7 +20,7 @@ function showTablesHTML()
 
         $result .= '<tr>';
         $result .= '<td><input type="checkbox" class="w3-check checkAll_subject" name="field[]" value="' . $tableName . '"></td>';
-        $result .= '<td>'.$tableName.'</td>';
+        $result .= '<td><a href="showRows.php?database=' . $_GET['database'] . '&table=' . $tableName . '">' . $tableName . '</a></td>';
         $result .= '</td>';
     }
 
@@ -45,7 +45,7 @@ function showTablesHTML()
     <div class="w3-col s1 m1 l1">&nbsp;</div>
     <div class="w3-col s10 m10 s10">
         <?php echo Alert::displayAsText(); ?>
-        <h1><?php echo $_GET['database']; ?> tables:</h1>
+        <h1><?php echo '<a href="index.php">Home</a> > ' .$_GET['database']; ?> tables:</h1>
         <?php echo showTablesHTML(); ?>
     </div>
     <div class="w3-col s1 m1 l1">&nbsp;</div>

@@ -20,18 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c37e83b2-c767-4ce0-bdbb-2364a92b413b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/databases/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/head.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Column.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/PDOConnector.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/SessionManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/action.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Row.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/showRows.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/showTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/showTables.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +54,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -71,7 +66,10 @@
       <recent name="C:\Users\48600\Desktop\Projects\GitHub repos\LambdaDatabasesManager\actions" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c37e83b2-c767-4ce0-bdbb-2364a92b413b" name="Default Changelist" comment="" />
@@ -92,11 +90,12 @@
       <workItem from="1600891539171" duration="4711000" />
       <workItem from="1600934772784" duration="1384000" />
       <workItem from="1600954677369" duration="8560000" />
+      <workItem from="1602873317918" duration="10164000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -111,23 +110,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1600955397658">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="336" y="361" key="#SQL_Dialects" timestamp="1602881451926">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="336" y="361" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1602881451926" />
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1602874616108">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600955397658" />
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602874616108" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600781029663">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600781029663" />
-    <state x="419" y="139" key="NewPhpClassDialog" timestamp="1600955369666">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="663" y="235" width="633" height="550" key="NewPhpClassDialog" timestamp="1602874565794">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="419" y="139" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1600955369666" />
+    <state x="663" y="235" width="633" height="550" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602874565794" />
     <state x="393" y="159" key="NewPhpClassDialog/0.23.1440.806@0.23.1440.806" timestamp="1598116981755" />
-    <state x="575" y="340" key="NewPhpFileDialog" timestamp="1600970242171">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="719" y="429" key="NewPhpFileDialog" timestamp="1602873525600">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="575" y="340" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600970242171" />
+    <state x="719" y="429" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602873525600" />
     <state x="539" y="356" key="NewPhpFileDialog/0.23.1440.806@0.23.1440.806" timestamp="1598115883066" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1600856398418">
       <screen x="0" y="0" width="1536" height="824" />
