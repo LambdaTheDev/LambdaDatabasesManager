@@ -3,7 +3,7 @@ I had problems with PhpMyAdmin and Adminer, so I decided to develop my own datab
 
 LDM is in development, but if you want to help with development, find me on Discord (LambdaTheDev#2594) or send me an e-mail: skagamerpl@gmail.com.
 
-#Features
+# Features
 
 - Developed with new PHP versions,
 - Good-looking GUI,
