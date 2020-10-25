@@ -4,37 +4,34 @@ Security::isAuthorized();
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
-    $name = $_POST['name'];
-    $collation = $_POST['collation'];
-    $charset = $_POST['charset'];
-
     $pdo = DBConnection::getConnection();
-    $queryCreate = $pdo->prepare("CREATE DATABASE :name");
-    $queryCreate->bindParam(':name', $name);
+
+    $name = $pdo->quote($_POST['name']);
+    $collation = $pdo->quote($_POST['collation']);
+    $charset = $pdo->quote($_POST['charset']);
+
+    $queryCreate = $pdo->prepare("CREATE DATABASE " . $name);
     $queryCreate->execute();
 
     if($queryCreate)
     {
-        $alter = $pdo->prepare("ALTER DATABASE :name CHARACTER SET :charset COLLATE :collation");
-        $alter->bindParam(':name', $name);
+        $alter = $pdo->prepare("ALTER DATABASE " . $name . " CHARACTER SET :charset COLLATE :collation");
         $alter->bindParam(':charset', $charset);
         $alter->bindParam(':collation', $collation);
         $alter->execute();
 
         if(!$alter)
         {
-            die('cant alter');
-            Alert::setAlert('Failed to alter table (SET CHARSET AND COLLATION). Try again.', 'red');
+            Alert::setAlert('Failed to set charset & collation, but database has been created. MySQL error: ' . print_r($alter->errorInfo(), true), 'yellow', 'showDatabases.php');
         }
         else
         {
-            die('success');
+            Alert::setAlert('Database created successfully!', 'green', 'showTables.php?database=' . $name);
         }
     }
     else
     {
-        die('cant create');
-        Alert::setAlert('Failed to create database. Possible reason: no permission.', 'red');
+        Alert::setAlert('Failed to create database. MySQL error: ' . print_r($queryCreate->errorInfo(), true), 'red', 'showDatabases.php');
     }
 }
 ?>

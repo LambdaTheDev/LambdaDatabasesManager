@@ -25,7 +25,7 @@ class Alert implements Module
     public static function displayAsText($seen = true)
     {
         self::startSession();
-        if(isset($_SESSION['alert'])) return null;
+        if(empty($_SESSION['alert'])) return null;
 
         if($_SESSION['alert']['seen'])
         {
@@ -40,7 +40,7 @@ class Alert implements Module
     public static function getText()
     {
         return $_SESSION['alert']['text'];
-    }
+    }// Notice: Undefined index: color in /var/www/html/databases-manager/modules/Alert.php on line 47
 
     public static function getColor()
     {
