@@ -7,5 +7,5 @@ if(Security::isAuthorized(false))
 }
 else
 {
-    header('Location: login.php#3');
+    header('Location: login.php');
 }

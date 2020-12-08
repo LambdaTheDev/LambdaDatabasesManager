@@ -43,9 +43,10 @@ function showTablesHTML()
 
 <div class="w3-container w3-row">
     <div class="w3-col s1 m1 l1">&nbsp;</div>
-    <div class="w3-col s10 m10 s10">
+    <div class="w3-col s10 m10 s10 w3-container">
         <?php echo Alert::displayAsText(); ?>
         <h1><?php echo '<a href="index.php">Home</a> > ' .$_GET['database']; ?> tables:</h1>
+        <a href="sql.php?database=<?php echo $_GET['database']; ?>" class="w3-button w3-blue">Execute SQL statement</a>
         <?php echo showTablesHTML(); ?>
     </div>
     <div class="w3-col s1 m1 l1">&nbsp;</div>
