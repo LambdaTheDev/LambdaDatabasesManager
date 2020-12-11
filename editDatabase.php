@@ -6,6 +6,8 @@ $display = '';
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
+    //todo: somehow get new db name and create it here
+
     foreach (array_keys($_POST['editedName']) as $originalName)
     {
         $newName = $_POST['editedName'][$originalName];
@@ -14,8 +16,14 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
         $pdo = null;
         try
         {
-            $pdo = DBConnection::getConnection($originalName);
-            //$query = $pdo->prepare("") todo - finish database editing
+            $currentDbPdo = DBConnection::getConnection($originalName);
+            $tables = $currentDbPdo->query("SHOW DATABASES");
+
+            while($table = $tables->fetch(PDO::FETCH_ASSOC))
+            {
+                $tableName = $table['Tables_in_' . $originalName];
+                $updateQuery = $currentDbPdo->query("RENAME TABLE " . $originalName . "." . $tableName . " TO " . $newName . '.' . $tableName);
+            }
         }
         catch (PDOException $ex)
         {
@@ -66,7 +74,7 @@ function showDatabasesToEdit($databasesList)
 <html>
 <head>
     <meta charset="utf-8">
-    <title>&lambda; Databases Manager - Log in to system</title>
+    <title>&lambda; Databases Manager - Edit database</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="includes/checkAll.js"></script>
