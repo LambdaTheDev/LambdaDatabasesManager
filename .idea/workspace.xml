@@ -20,11 +20,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c37e83b2-c767-4ce0-bdbb-2364a92b413b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sql.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LambdaDatabasesManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LambdaDatabasesManager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/askBeforeSubmit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drivers/IDriver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drivers/MySQLDriver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exceptions/InvalidConnectionException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/Column.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/createDatabase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/createTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editDatabase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/askBeforeSubmit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/checkAll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/navbar.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/showTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/showTables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Alert.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/DBConnection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Module.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Row.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Security.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/modules_loader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/showDatabases.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/showRows.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/showTables.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +62,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpServers">
+    <servers>
+      <server id="ba800fa5-f2da-456c-ab84-a9cfb5378563" name="Unnamed" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectId" id="1gSinSmciMKn0k6BP3AldpsJUiU" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -57,8 +88,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -95,6 +127,8 @@
       <workItem from="1602960355247" duration="1612000" />
       <workItem from="1606205081612" duration="5715000" />
       <workItem from="1606286439084" duration="6000" />
+      <workItem from="1618425231608" duration="5907000" />
+      <workItem from="1618473939214" duration="17380000" />
     </task>
     <servers />
   </component>
@@ -114,64 +148,29 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="336" y="361" key="#SQL_Dialects" timestamp="1602881451926">
+    <state x="667" y="163" key="#PHP" timestamp="1618432438672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="336" y="361" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1602881451926" />
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1602874616108">
+    <state x="667" y="163" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1618432438672" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1618505124820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600955397658" />
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602874616108" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600781029663">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600781029663" />
-    <state x="663" y="235" width="633" height="550" key="NewPhpClassDialog" timestamp="1602874565794">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1618505124820" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618474647426">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="419" y="139" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1600955369666" />
-    <state x="663" y="235" width="633" height="550" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602874565794" />
-    <state x="393" y="159" key="NewPhpClassDialog/0.23.1440.806@0.23.1440.806" timestamp="1598116981755" />
-    <state x="719" y="429" key="NewPhpFileDialog" timestamp="1606205105735">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618474647426" />
+    <state x="748" y="243" key="NewPhpClassDialog" timestamp="1618490897108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="575" y="340" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600970242171" />
-    <state x="719" y="429" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606205105735" />
-    <state x="539" y="356" key="NewPhpFileDialog/0.23.1440.806@0.23.1440.806" timestamp="1598115883066" />
-    <state x="539" y="359" key="NewPhpFileDialog/0.23.1440.814@0.23.1440.814" timestamp="1602954953308" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1600856398418">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="748" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618490897108" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1618474969249">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600856398418" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1600893516449">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618474969249" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1618433285424">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1600893516449" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600934868751">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600934868751" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/modules/Alert.php</url>
-          <line>29</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/modules/Alert.php</url>
-          <line>42</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/modules/Alert.php</url>
-          <line>46</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1618433285424" />
   </component>
 </project>
